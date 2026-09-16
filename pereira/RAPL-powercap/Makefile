@@ -7,3 +7,5 @@ main: main.c
 
 clean:
 	rm -f main
+
+compile: main

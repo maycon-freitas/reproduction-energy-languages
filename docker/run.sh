@@ -7,7 +7,7 @@ IMAGEM=pereira-repro
 docker_run() {
   docker run --rm -it \
     --privileged \
-    -v /sys/class/powercap:/sys/class/powercap:ro \
+    -v /lib/modules:/lib/modules:ro \
     -v "$RAIZ":/repo \
     -w /repo/pereira \
     "$IMAGEM" "$@"

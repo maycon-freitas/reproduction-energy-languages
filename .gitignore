@@ -2,6 +2,5 @@ pereira/*.txt
 pereira/C++/*/*.o
 pereira/C++/*/*_run
 pereira/Python/*/*.py
-pereira/RAPL-powercap/main
-pereira/dados/*/.feito-*
-pereira/*/*/mprofile-*.dat
+pereira/RAPL/main
+pereira/RAPL/rapl.o

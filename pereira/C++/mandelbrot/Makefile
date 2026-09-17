@@ -1,10 +1,8 @@
-CXX = clang++-19
-RAPL ?= ../../RAPL-powercap/main
-
 compile:
-	$(CXX) -c -pipe -O3 -fomit-frame-pointer -march=native -mfpmath=sse -msse2 -mfpmath=sse -msse2 -fopenmp -mno-fma --std=c++14 mandelbrot.gpp-6.c++ -o mandelbrot.gpp-6.c++.o &&  $(CXX) mandelbrot.gpp-6.c++.o -o mandelbrot.gpp-6.gpp_run -fopenmp 
+	clang++-19 -c -pipe -O3 -fomit-frame-pointer -march=native -mfpmath=sse -msse2 -mfpmath=sse -msse2 -fopenmp -mno-fma --std=c++14 mandelbrot.gpp-6.c++ -o mandelbrot.gpp-6.c++.o &&  clang++-19 mandelbrot.gpp-6.c++.o -o mandelbrot.gpp-6.gpp_run -fopenmp 
 measure:
-	sudo -E $(RAPL) "./mandelbrot.gpp-6.gpp_run 16000" C++ mandelbrot
+	sudo modprobe msr
+	sudo ../../RAPL/main "./mandelbrot.gpp-6.gpp_run 16000" C++ mandelbrot
 
 run:
 	./mandelbrot.gpp-6.gpp_run 16000
@@ -14,6 +12,3 @@ mem:
 
 valgrind:
 	valgrind --tool=massif --stacks=yes ./mandelbrot.gpp-6.gpp_run 16000
-
-memtotal:
-	mprof run -o mprofile-mandelbrot.dat ./mandelbrot.gpp-6.gpp_run 16000

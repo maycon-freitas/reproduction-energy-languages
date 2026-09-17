@@ -4,7 +4,7 @@ FROM ubuntu:24.04
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
        ca-certificates curl wget gnupg lsb-release software-properties-common \
-       build-essential make git sudo time \
+       build-essential make git sudo time kmod \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ARG CLANG_VERSION=19
@@ -39,13 +39,13 @@ RUN wget --no-verbose https://www.python.org/ftp/python/${PYTHON_VERSION}/Python
     && make -j"$(nproc)" && make install \
     && cd .. && rm -rf Python-${PYTHON_VERSION} Python-${PYTHON_VERSION}.tar.xz
 
-# gmpy2 (pidigits), memory_profiler (alvo memtotal), lazyme (compile_all.py).
+# gmpy2 (pidigits), lazyme (compile_all.py).
 RUN python3 -m pip install --no-cache-dir --break-system-packages \
-       gmpy2 memory_profiler lazyme
+       gmpy2 lazyme
 
 RUN clang++-${CLANG_VERSION} --version | head -1 \
     && python3 --version \
-    && python3 -c "import gmpy2, memory_profiler, lazyme; print('pacotes Python ok')" \
+    && python3 -c "import gmpy2, lazyme; print('pacotes Python ok')" \
     && /usr/bin/time --version
 
 WORKDIR /repo/pereira

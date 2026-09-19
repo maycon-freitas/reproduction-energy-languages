@@ -1,0 +1,15 @@
+*tmp
+.tmp*
+tmp.*
+.NETCore*
+*.class
+lshw
+sysinfo.*
+*.o
+*_run
+!*.csproj
+!*.fsproj
+.cache
+.vscode
+__pycache__
+env

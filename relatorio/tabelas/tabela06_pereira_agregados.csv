@@ -1,0 +1,5 @@
+Origem,Linguagem,Energy média (J),Time médio (ms),Energy normalizada,Time normalizado
+reprodução,C++,45.8841,2599.0144,1.0,1.0
+reprodução,Python,1505.9456,71395.0843,32.8207,27.4701
+artigo,C++,77.5,3155.0,1.0,1.0
+artigo,Python,4390.0,145178.0,56.6269,46.0897

@@ -1,0 +1,12 @@
+,Pereira,Pereira,van Kempen,van Kempen,van Kempen,van Kempen
+,restrito,reprodução,restrito,restrito,reprodução,reprodução
+,,,padrão,mín. freq.,padrão,mín. freq.
+Benchmark,,,,,,
+binary-trees,43.4977,20.7923,15.256,22.4342,17.2098,24.7533
+fannkuch-redux,58.1532,27.9951,8.4471,17.1539,27.6635,29.2121
+k-nucleotide,14.4089,16.5722,3.939,16.1004,12.7286,15.1163
+mandelbrot,240.0098,180.1095,83.1982,132.4351,147.2497,160.3704
+n-body,137.4485,113.6256,77.9887,79.428,110.9915,114.6666
+regex-redux,0.9214,0.8536,0.6437,1.1408,0.8118,1.1376
+reverse-complement,5.234,5.0797,3.9577,5.3093,6.6162,6.9101
+spectral-norm,372.8076,322.628,219.7721,232.8287,273.3515,217.8076

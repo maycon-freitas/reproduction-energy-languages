@@ -1,0 +1,5 @@
+Origem,Linguagem,DRAM média (J),CPU (%)
+reprodução,C++,1.7897,95.1324
+reprodução,Python,44.8211,95.3757
+artigo,C++,8.54,88.94
+artigo,Python,358.75,87.98

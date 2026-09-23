@@ -1,0 +1,6 @@
+Configuração,Origem,a,b (W),R²,DRAM/PKG mín. (%),DRAM/PKG máx. (%)
+padrão,artigo,1.68,12.0,0.93,2.0,8.0
+padrão,restrito,2.4376,11.7459,0.9583,2.1598,7.4769
+padrão,reprodução,0.7971,0.5705,0.9964,0.6422,4.5282
+mín. freq.,restrito,,,,6.3428,7.054
+mín. freq.,reprodução,,,,30.8283,44.8979

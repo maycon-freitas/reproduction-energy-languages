@@ -1,0 +1,9 @@
+,,Tempo,Tempo,Tempo,Tempo,Energia,Energia,Energia,Energia
+,,média geom.,rho,mediana,p,média geom.,rho,mediana,p
+Estudo,Conjunto,,,,,,,,
+Pereira,restrito,28.9661,1.0,1.1889,0.547,34.8218,1.0,1.3476,0.195
+Pereira,reprodução,23.619,1.0,0.8522,0.250,26.9243,1.0,0.9746,0.742
+van Kempen,"restrito, padrão",13.2871,0.9524,0.4987,0.039,14.3955,0.9524,0.5693,0.016
+van Kempen,"restrito, mín. freq.",23.458,0.9762,0.8851,0.195,23.465,0.9762,0.8661,0.109
+van Kempen,"reprodução, padrão",25.2891,1.0,0.9309,0.547,24.85,1.0,0.9326,0.109
+van Kempen,"reprodução, mín. freq.",26.4711,,,--,27.6753,,,--

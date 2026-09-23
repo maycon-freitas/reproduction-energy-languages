@@ -1,0 +1,12 @@
+,C++,C++,Python,Python
+,mecanismo,núcleos,mecanismo,núcleos
+Benchmark,,,,
+binary-trees,OpenMP,5.9415,multiprocessing,6.5225
+fannkuch-redux,OpenMP,7.9614,multiprocessing,7.879
+fasta,threads,,nenhum,1.0
+k-nucleotide,threads,5.4274,multiprocessing,7.6475
+mandelbrot,OpenMP,7.9412,multiprocessing,7.9782
+n-body,só flag,1.0001,nenhum,1.0
+regex-redux,OpenMP,1.6934,multiprocessing,2.2605
+reverse-complement,threads,1.6719,multiprocessing,1.4894
+spectral-norm,OpenMP,7.8861,multiprocessing,3.9918

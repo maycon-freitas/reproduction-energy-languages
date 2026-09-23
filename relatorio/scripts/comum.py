@@ -104,14 +104,6 @@ def media_aparada(x):
     return x[k:len(x) - k].mean()
 
 
-def media_geometrica(x):
-    return float(np.exp(np.log(np.asarray(x)).mean()))
-
-
-def fmt_p(v):
-    return "--" if pd.isna(v) else ("< 0,001" if v < 0.001 else f"{v:.3f}")
-
-
 def rea_parker(r):
     """Classificação de Rea e Parker, adotada por Pereira et al. (2021) na Tabela 5."""
     r = abs(r)
@@ -352,7 +344,6 @@ def razoes_vankempen():
 CONJUNTOS = [("Pereira", "restrito"), ("Pereira", "reprodução"),
              ("van Kempen", "restrito, padrão"), ("van Kempen", "restrito, mín. freq."),
              ("van Kempen", "reprodução, padrão"), ("van Kempen", "reprodução, mín. freq.")]
-REFERENCIA = ("van Kempen", "reprodução, mín. freq.")  # frequência e número de núcleos fixos
 
 
 def razoes_comparadas(metrica):
